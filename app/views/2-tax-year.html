@@ -1,0 +1,88 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+
+            <!-- Question title -->
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Tax year
+              </h1>
+            </legend>
+
+            <!-- Question hint text -->
+
+            <div id="changed-name-hint" class="govuk-hint">
+              <p class="govuk-hint">Any tax is based on your income for the tax year. A tax year runs from 6 April to the following 5 April. You can use this checker to work out your tax as far back as the tax year 2015/2016 (6 April 2015 to 5 April 2016).</p>
+
+              <p class="govuk-hint">Here is an example covering two tax years:</p>
+
+              <ul class="govuk-list govuk-list--bullet govuk-hint">
+                <li>you start work on 2nd March 2016</li>
+                <li>you work 20 hours a week for 7 months (29 weeks)</li>
+                <li>you earn a total of £3,770 (£130 a week)</li>
+                <li>your job falls into 2 tax years: 4 weeks in 2015/2016 and 25 weeks in 2016/2017</li>
+                <li>your employer gave you a form P60 showing pay of £520 and tax of £104.00 for the tax year 2015/2016</li>
+                <li>when you left he gave you a form P45 showing pay of £3,250 and tax of £650 for the tax year 2016/2017</li>
+              </ul>
+
+              <p class="govuk-hint">Assuming you had no other jobs between 6 April 2015 and 5 April 2017, you will need to use the tax checker twice, once for 2015/2016 and once for 2016/2017.</p>
+  
+            </div>
+
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  2022/2023
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  2021/2022
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                  2020/2021
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                  2019/2020
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                  2018/2019
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
