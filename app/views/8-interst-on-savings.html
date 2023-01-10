@@ -13,17 +13,36 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">
-        Heading or question goes here
-      </h1>
+      <form class="form" action="9-tax-paid-on-interest" method="post">
 
-      <form class="form" action="/url/of/next/page" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
 
-        <p>[Insert question content here]</p>
+            <!-- Question title -->
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                How much interest did you receive from your savings by UK banks or building societies after tax?
+              </h1>
+            </legend>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+            <!-- Question hint -->
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <div id="account-number-hint" class="govuk-hint">
+              The total amount of interest paid to you by your bank or building society (after tax has been taken off). Do not include interest from other forms of savings, for example, Individual Saving Accounts (ISA).
+            </div>
+
+            <!-- Input field -->
+
+            <div class="govuk-input__wrapper">
+              <div class="govuk-input__prefix" aria-hidden="true">£</div>
+              <input class="govuk-input govuk-!-width-one-third" id="cost" name="cost" type="text" spellcheck="false">
+            </div>
+          </fieldset>  
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
 
       </form>
 

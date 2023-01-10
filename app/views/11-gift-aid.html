@@ -13,17 +13,45 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">
-        Heading or question goes here
-      </h1>
+      <form class="form" action="12-blind-person-allowance" method="post">
 
-      <form class="form" action="/url/of/next/page" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
 
-        <p>[Insert question content here]</p>
+            <!-- Question title -->
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                How much did you pay in Gift Aid donations during the year?
+              </h1>
+            </legend>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+            <!-- Question hint -->
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <div id="account-number-hint" class="govuk-hint">
+              <ul class="govuk-list govuk-list--bullet govuk-hint">
+                <li>When you give money to a charity or to a registered Community Amateur Sports Club (CASC) through Gift Aid, the charity or CASC can reclaim the tax that you’ve paid on that money.</li>
+                <li>You must have paid at least the same amount of tax that the charity or CASC is going to reclaim, or you could end up with a bill for the difference.</li>
+                <li>The amount you donate is treated as the amount after basic rate (20%) tax. The charity or CASC can claim 25p for each £1 you donate.</li>
+                <li>To work out the maximum you can donate through Gift Aid, you can multiply the tax you’ll pay by 4.</li>
+              </ul>
+
+              <p class="govuk-hint">For example, if Jane is going to pay £100 tax this year, she can donate £400 to charity or a CASC through Gift Aid. The charity or CASC will claim back 400 x 25p, which is £100.</p>
+              <p class="govuk-hint">For more information on Gift Aid payments to charities, including how to claim Higher Rate tax paid on Gift Aid donations, visit www.gov.uk/donating-to-charity</p>
+              <p class="govuk-hint">You can find out more about registering a CASC here www.gov.uk/register-a-community-amateur-sports-club</p>
+            </div>
+
+            <!-- Input field -->
+
+            <div class="govuk-input__wrapper">
+              <div class="govuk-input__prefix" aria-hidden="true">£</div>
+              <input class="govuk-input govuk-!-width-one-third" id="cost" name="cost" type="text" spellcheck="false">
+            </div>
+          </fieldset>  
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
 
       </form>
 

@@ -13,17 +13,62 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">
-        Heading or question goes here
-      </h1>
+      <form class="form" action="11-gift-aid" method="post">
 
-      <form class="form" action="/url/of/next/page" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
 
-        <p>[Insert question content here]</p>
+            <!-- Question title -->
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                How much interest did you receive from your savings by UK banks or building societies that was not taxed?
+              </h1>
+            </legend>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+            <!-- Question hint -->
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <div id="account-number-hint" class="govuk-hint">
+              <p class="govuk-hint">I AM SO SORRY</p>
+
+              <p class="govuk-hint">The total amount of any untaxed bank or building society interest you have received in the tax year. You will need to enter an amount here if you have filled in a form R85 and received interest without tax being taken off. Do not include savings interest from ISAs.</p>
+
+              <p class="govuk-hint">From 6 April 2016, if you’re a basic rate taxpayer you’ll be able to earn up to £1,000 in savings income tax-free. Higher rate taxpayers will be able to earn up to £500 savings income tax free. This is called the Personal Savings Allowance. If you already receive interest without tax being taken off, you’ll no longer need to tell your bank or building society that you qualify for tax-free interest.</p>
+
+              <p class="govuk-hint">For tax years 2016/2017 onwards, only include the amount of untaxed interest that is above your Personal Savings Allowance, for example if you are a basic rate taxpayer and the untaxed interest received was £1,200, enter £200.</p>
+
+              <p class="govuk-hint">Examples for tax year 2019/2020</p>
+
+              <p class="govuk-hint">Example 1</p>
+
+              <p class="govuk-hint">Jane had employment Income £8,000 and untaxed Interest of £9,000. Jane is entitled to £1,000 Personal Savings Allowance. She should enter £8,000 untaxed interest.</p>
+
+              <p class="govuk-hint">Example 2</p>
+
+              <p class="govuk-hint">John had employment income of £19,000 and untaxed interest of £1,300. John's total income is £20,300. John's total income is less than £50,000 so he is a basic rate taxpayer and entitled to £1,000 Personal Savings Allowance. He should enter untaxed interest of £300.</p>
+
+              <p class="govuk-hint">Example 3</p>
+
+              <p class="govuk-hint">Jayne had employment income of £65000 and untaxed interest of £3,200. Jayne's total income is £68,200. Jayne's total income is greater than £50,000 so she is a higher rate taxpayer, entitled to £500 Personal Savings Allowance, and need only enter untaxed interest of £2,700.</p>
+
+              <p class="govuk-hint">This calculator will apply the starting rate for savings. This means where applicable you can receive up to £5,000 of interest tax free. For more information on the starting rate for savings, go to www.gov.uk/apply-tax-free-interest-on-savings</p>
+
+              <p class="govuk-hint">For more information, a Personal Savings Allowance factsheet is available on GOV.UK</p>
+
+              <p class="govuk-hint">Details of the tax allowances and basic rate and higher rate tax bandwidths for the tax year 2019/2020 are detailed at www.gov.uk/income-tax-rates For the tax year 2018/2019 go to www.gov.uk/income-tax-rates/previous-tax-years</p>
+            </div>
+
+            <!-- Input field -->
+
+            <div class="govuk-input__wrapper">
+              <div class="govuk-input__prefix" aria-hidden="true">£</div>
+              <input class="govuk-input govuk-!-width-one-third" id="cost" name="cost" type="text" spellcheck="false">
+            </div>
+          </fieldset>  
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
 
       </form>
 

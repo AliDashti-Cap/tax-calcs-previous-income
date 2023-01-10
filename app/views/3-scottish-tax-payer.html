@@ -13,17 +13,46 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">
-        Heading or question goes here
-      </h1>
+      <form class="form" action="4-welsh-tax-payer" method="post">
 
-      <form class="form" action="/url/of/next/page" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
 
-        <p>[Insert question content here]</p>
+            <!-- Question title -->
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Are you a Scottish taxpayer?
+              </h1>
+            </legend>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+            <!-- Question hint text -->
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+            <div id="changed-name-hint" class="govuk-hint">
+              <p class="govuk-hint"> <a href="https://www.gov.uk/scottish-income-tax">Change me</a> </p>
+            </div>
+
+            <!-- Question options -->
+
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
 
       </form>
 
